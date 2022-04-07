@@ -1,0 +1,9 @@
+## Ignorer les fichiers binaires et les fichiers compilés
+*.a
+*.o
+*.hex
+*.out
+*.map
+*.d
+.DS_Store
+.vscode
