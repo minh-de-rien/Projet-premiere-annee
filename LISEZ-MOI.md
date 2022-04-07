@@ -1,11 +1,13 @@
 ---
 
-# Projet INF1900 - A21
+# Projet INF1900 - Polytechnique Montréal
 Projet initial de système embarqué
 
-# Polytechnique Montréal
-Équipe : 18-35
-Membres: Nils Coulier, Minh Ngoc Do, Jolan Le Clainche et Rosie Morissette
+# Auteur.es
+* [Nils Coulier]
+* [Minh Ngoc Do](https://github.com/minh-de-rien)
+* [Jolan Le Clainche](https://github.com/JolanLec)
+* [Rosie Morissette](https://github.com/mori-rosi)
 
 ---
 
@@ -18,9 +20,9 @@ Le but du projet est de programmer un robot équipé d'un Atmega 324PA pour qu'i
 
 ### Capteurs et actionneurs:
 
-⋅⋅* Le robot utilise un suiveur de ligne (Cytron LSS05) pour compléter le parcours et un capteur de distance (Sharp GP2Y0A21YK0F) pour répondre à des évenements prenant place durant le parcours. 
-⋅⋅* Un afficheur (LCD Lumex LCM-S01602DTR/M) et une diode électroluminescente (DEL) sont aussi installés sur le robot. 
-⋅⋅* Enfin, un haut-parleur permet d'émettre du son en fonction de la distance le séparant d'un obstacle.
+* Le robot utilise un suiveur de ligne (Cytron LSS05) pour compléter le parcours et un capteur de distance (Sharp GP2Y0A21YK0F) pour répondre à des évenements prenant place durant le parcours. 
+* Un afficheur (LCD Lumex LCM-S01602DTR/M) et une diode électroluminescente (DEL) sont aussi installés sur le robot. 
+* Enfin, un haut-parleur permet d'émettre du son en fonction de la distance le séparant d'un obstacle.
 
 
 ### Branchements:
@@ -34,24 +36,24 @@ Le but du projet est de programmer un robot équipé d'un Atmega 324PA pour qu'i
 * Bouton-poussoir externe:   pin D4
 
 * Moteurs:                   pins B4 à B7
-  Enable OC0A (roue droite): pin B4
-  Enable OC0B (roue gauche): pin B5
-  Direction droite         : pin B6
-  Direction gauche         : pin B7        
+  Enable OC0A (roue droite): pin B4  
+  Enable OC0B (roue gauche): pin B5  
+  Direction droite         : pin B6  
+  Direction gauche         : pin B7         
 
 *L'interrupteur sur le robot est lié à la pin D3 grâce au cavalier sur IntEn.*
 
 
 ### Ressources internes:
 
-* Minuterie 0: PWM pour le moteur (OCR0A, roue droite et OCR0B, roue gauche)
-* Minuterie 1: PWM pour le son (OCR1A)
-* Minuterie 2: Génère des interruptions 30 fois par seconde pour mesurer la distance à un obstacle (OCR2A) ou la distance parcourue (OCR2B).
+* Minuterie 0 : PWM pour le moteur (OCR0A, roue droite et OCR0B, roue gauche)
+* Minuterie 1 : PWM pour le son (OCR1A)
+* Minuterie 2 : Génère des interruptions 30 fois par seconde pour mesurer la distance à un obstacle (OCR2A) ou la distance parcourue (OCR2B).
 
 
 ## Librairie
 
-Des classes et fonctions se trouvent dans la librairie sous le répertoire "lib".
+Des classes et fonctions se trouvent dans la librairie sous le répertoire « lib ».
 
 ### Classes
 
@@ -101,5 +103,7 @@ Le code principal est réparti en 4 sections principales.
 
 * Des fonctions globales simples (comme les anti-rebonds pour les boutons).
 
-
+---
+Équipe : 18-35
+8 décembre 2021
 
