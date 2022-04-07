@@ -36,8 +36,7 @@ Le but du projet est de programmer un robot équipé d'un Atmega 324PA pour qu'i
 | Capteur de distance     | A7                        |
 | Suiveur de ligne        | A1 à A6                   |
 | Bouton-poussoir externe | D4                        |
-| Moteurs <br>Enable OC0A (roue droite) <br>Enable OC0B (roue gauche) <br>Direction droite <br>Direction gauche|
-B4 à B7 <br>B4 <br>B4 <br>B6 <br>B7|     
+| Moteurs <br>Enable OC0A (roue droite) <br>Enable OC0B (roue gauche) <br>Direction droite <br>Direction gauche| B4 à B7 <br>B4 <br>B4 <br>B6 <br>B7|     
 
 *L'interrupteur sur le robot est lié à la pin D3 grâce au cavalier sur IntEn.*
 
