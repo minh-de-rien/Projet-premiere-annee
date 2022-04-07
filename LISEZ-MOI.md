@@ -4,10 +4,10 @@
 Projet initial de système embarqué
 
 # Auteur.es
-* [Nils Coulier]
-* [Minh Ngoc Do](https://github.com/minh-de-rien)
-* [Jolan Le Clainche](https://github.com/JolanLec)
-* [Rosie Morissette](https://github.com/mori-rosi)
+ [Nils Coulier]
+ [Minh Ngoc Do](https://github.com/minh-de-rien)
+ [Jolan Le Clainche](https://github.com/JolanLec)
+ [Rosie Morissette](https://github.com/mori-rosi)
 
 ---
 
