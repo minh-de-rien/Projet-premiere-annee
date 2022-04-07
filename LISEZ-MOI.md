@@ -11,7 +11,7 @@ Nils Coulier
 
 ---
 
-# Description
+## Description:
 
 Le but du projet est de programmer un robot équipé d'un Atmega 324PA pour qu'il suive un parcours constitué d'une ligne noire et jaune et de deux obstacles.
 
@@ -27,21 +27,19 @@ Le but du projet est de programmer un robot équipé d'un Atmega 324PA pour qu'i
 
 ### Branchements:
 
-| Composants              | Pins                      |
-| ----------------------- |:-------------------------:|
-| Pins vide               | A8, B3, B8, D1, D2, D7, D8|
-| DEL                     | B1-B2                     |
-| Haut-parleur            | D5-D6 (OC1A sur pin D6)   | 
-| LCD                     | PORTC en entier           |
-| Capteur de distance     | A7                        |
-| Suiveur de ligne        | A1 à A6                   |
-| Bouton-poussoir externe | D4                        |
-| Moteurs*                | B4 à B7                   |
+* Pins vide:                 pins A8, B3, B8, D1, D2, D7, D8
+* DEL:                       pins B1-B2
+* Haut-parleur:              pins D5-D6 (OC1A sur pin D6)
+* LCD:                       PORTC
+* Capteur de distance:       pin A7
+* Suiveur de ligne:          pins A1 à A6
+* Bouton-poussoir externe:   pin D4
 
-Enable OC0A (roue droite): pin B4  
-Enable OC0B (roue gauche): pin B5  
-Direction droite         : pin B6  
-Direction gauche         : pin B7      
+* Moteurs:                   pins B4 à B7
+  Enable OC0A (roue droite): pin B4  
+  Enable OC0B (roue gauche): pin B5  
+  Direction droite         : pin B6  
+  Direction gauche         : pin B7         
 
 *L'interrupteur sur le robot est lié à la pin D3 grâce au cavalier sur IntEn.*
 
