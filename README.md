@@ -18,14 +18,14 @@ Le but du projet est de programmer un robot équipé d'un Atmega 324PA pour qu'i
 
 ## Aspects matériels
 
-### Capteurs et actionneurs:
+### Capteurs et actionneurs
 
 * Le robot utilise un suiveur de ligne (Cytron LSS05) pour compléter le parcours et un capteur de distance (Sharp GP2Y0A21YK0F) pour répondre à des évenements prenant place durant le parcours. 
 * Un afficheur (LCD Lumex LCM-S01602DTR/M) et une diode électroluminescente (DEL) sont aussi installés sur le robot. 
 * Enfin, un haut-parleur permet d'émettre du son en fonction de la distance le séparant d'un obstacle.
 
 
-### Branchements:
+### Branchements
 
 | Composants              | Pins                      |
 | ----------------------- |:-------------------------:|
@@ -36,17 +36,13 @@ Le but du projet est de programmer un robot équipé d'un Atmega 324PA pour qu'i
 | Capteur de distance     | A7                        |
 | Suiveur de ligne        | A1 à A6                   |
 | Bouton-poussoir externe | D4                        |
-| Moteurs*                | B4 à B7                   |
-
-Enable OC0A (roue droite): pin B4  
-Enable OC0B (roue gauche): pin B5  
-Direction droite         : pin B6  
-Direction gauche         : pin B7      
+| Moteurs <br>Enable OC0A (roue droite) <br>Enable OC0B (roue gauche) <br>Direction droite <br>Direction gauche|
+B4 à B7 <br>B4 <br>B4 <br>B6 <br>B7|     
 
 *L'interrupteur sur le robot est lié à la pin D3 grâce au cavalier sur IntEn.*
 
 
-### Ressources internes:
+### Ressources internes
 
 * Minuterie 0 : PWM pour le moteur (OCR0A, roue droite et OCR0B, roue gauche)
 * Minuterie 1 : PWM pour le son (OCR1A)
