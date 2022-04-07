@@ -4,10 +4,10 @@
 Projet initial de système embarqué
 
 # Auteur.es
- [Nils Coulier]
- [Minh Ngoc Do](https://github.com/minh-de-rien)
- [Jolan Le Clainche](https://github.com/JolanLec)
- [Rosie Morissette](https://github.com/mori-rosi)
+Nils Coulier  
+[Minh Ngoc Do](https://github.com/minh-de-rien)  
+[Jolan Le Clainche](https://github.com/JolanLec)  
+[Rosie Morissette](https://github.com/mori-rosi)  
 
 ---
 
@@ -58,7 +58,7 @@ Des classes et fonctions se trouvent dans la librairie sous le répertoire « li
 ### Classes
 
 `Robot`
-  La classe Robot permet un contrôle centralisé. Elle comprend un Moteur, une Del, et un Lcd. En plus des méthodes fournies par ces classes, Robot contient les méthodes suivantes: 
+  La classe Robot permet un contrôle centralisé. Elle comprend un Moteur, une Del, et un Lcd. En plus des méthodes fournies par ces classes, Robot contient les méthodes suivantes : 
   * attendre(), 
   * suivreLigne(), 
   * suivreParcours(), 
@@ -68,15 +68,13 @@ Des classes et fonctions se trouvent dans la librairie sous le répertoire « li
     des valeurs prédéfinies).
 
 `Moteur`
-    La classe Moteur comprend deux Roue et permet une gestion du moteur en fournissant des méthodes pour ajuster la vitesse de chaque roue, pour synchroniser les vitesses des deux roues, et pour tourner. La classe Moteur utilise le timer0 du atmega324PA pour controler le moteur. Il 
-    faut donc faire appel à la méthode initialiser() avant toute chose pour pouvoir controler le moteur (intitialiser le timer). On utilise les registres OCR0A et OCR0B pour controler les roues; par conséquent les signaux "Enable" des roues sont branchés sur les pins 4 et 5 du PORTB pour répondre aux signaux OC0A et OC0B.
+    La classe Moteur comprend deux Roue et permet une gestion du moteur en fournissant des méthodes pour ajuster la vitesse de chaque roue, pour synchroniser les vitesses des deux roues, et pour tourner. La classe Moteur utilise le timer0 du atmega324PA pour controler le moteur. Il faut donc faire appel à la méthode initialiser() avant toute chose pour pouvoir controler le moteur (intitialiser le timer). On utilise les registres OCR0A et OCR0B pour controler les roues; par conséquent les signaux "Enable" des roues sont branchés sur les pins 4 et 5 du PORTB pour répondre aux signaux OC0A et OC0B.
 
 `Roue`
     La classe Roue permet de représenter les roues du robot. Elle détient comme attributs une référence au PORT sur lequel la roue est branchée, un uint8_t pour indiquer le pin controlant la direction, ainsi qu'un uint8_t indiquant la direction de la roue. Les méthodes de la classe permettent un contrôle de la direction. Dans notre cas, ce sont les pins 6 et 7 du PORTB qui sont liés à la direction des roues.
 
 `Del`
-    La classe Del permet de contrôler la DEL présente sur le robot. Elle détient comme attributs une réference au port sur lequel la DEL est branchée, une référence au registre de donnée de direction (DDR), ainsi que des uint8_t indiquant la broche négative et la broche positive sur 
-    lesquelles elle est branchée. Ses méthodes permettent d'allumer la del du robot d'une certaine couleur, avec un délai ou non, et de l'éteindre. Dans notre assemblage, la DEL est branchée sur les pin 1 (négatif) et 2 (positif) du PORTB.
+    La classe Del permet de contrôler la DEL présente sur le robot. Elle détient comme attributs une réference au port sur lequel la DEL est branchée, une référence au registre de donnée de direction (DDR), ainsi que des uint8_t indiquant la broche négative et la broche positive sur lesquelles elle est branchée. Ses méthodes permettent d'allumer la del du robot d'une certaine couleur, avec un délai ou non, et de l'éteindre. Dans notre assemblage, la DEL est branchée sur les pin 1 (négatif) et 2 (positif) du PORTB.
 
 ### Structure
 
@@ -104,6 +102,6 @@ Le code principal est réparti en 4 sections principales.
 * Des fonctions globales simples (comme les anti-rebonds pour les boutons).
 
 ---
-Équipe : 18-35
+Équipe : 18-35  
 8 décembre 2021
 
